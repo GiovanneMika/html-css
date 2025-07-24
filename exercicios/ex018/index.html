@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <Style>
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif
+        }
+
+        h1 {
+            font-size: 2em;
+            color: darkgreen;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        #titulo-principal {
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+        }
+
+        .topico {
+            text-align: right;
+        }
+
+        .texto {
+            text-align: justify;
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        
+        a:active{
+            background-color: yellow;
+        }
+        .especial:hover{
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+        .especial::before{
+            content: '>>';
+            font-weight: lighter;
+
+        }
+        .especial::after{
+            content: '<<';
+            font-weight: lighter;
+        }
+    </Style>
+</head>
+
+<body>
+    <h1 id="titulo-principal">Aprenda desenvolvimento web</h1>
+    <h1>Aprenda HTML</h1>
+    <h2 class="topico">Semântica Web</h2>
+    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id porro animi, impedit eligendi
+        laudantium unde voluptas quam cupiditate quae deleniti earum tempore harum et rem? Ea odit illo iusto ducimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil debitis accusantium voluptatum quam recusandae
+        consectetur in magnam praesentium delectus molestias, voluptas corrupti, nesciunt odio, aut esse cupiditate
+        dolore a reiciendis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id porro animi, impedit eligendi
+        laudantium unde voluptas quam cupiditate quae deleniti earum tempore harum et rem? Ea odit illo iusto ducimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil debitis accusantium voluptatum quam recusandae
+        consectetur in magnam praesentium delectus molestias, voluptas corrupti, nesciunt odio, aut esse cupiditate
+        dolore a reiciendis!</p>
+    <h1>Aprenda CSS</h1>
+    <h2 class="topico">Estilos Web</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, numquam, ut dolorum, earum accusamus provident hic
+        autem harum sunt pariatur aliquam accusantium commodi veniam cumque qui quod consectetur est voluptatibus!
+        Ratione nisi aspernatur consequuntur dolores, assumenda expedita et dignissimos corporis temporibus vero ipsum
+        commodi omnis doloremque impedit non culpa obcaecati repellat natus placeat asperiores nostrum suscipit.
+        Eligendi, vel! Fuga, dicta?
+        Nostrum provident animi exercitationem, unde dolorem quis repellat ratione harum aperiam ea adipisci commodi
+        earum modi ex ipsa consequatur accusamus? Ab eius quam illo dolorum corporis consequuntur architecto ullam
+        pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, numquam, ut dolorum, earum accusamus
+        provident hic autem harum sunt pariatur aliquam accusantium commodi veniam cumque qui quod consectetur est
+        voluptatibus!
+        Ratione nisi aspernatur consequuntur dolores, assumenda expedita et dignissimos corporis temporibus vero ipsum
+        commodi omnis doloremque impedit non culpa obcaecati repellat natus placeat asperiores nostrum suscipit.
+        Eligendi, vel! Fuga, dicta?
+        Nostrum provident animi exercitationem, unde dolorem quis repellat ratione harum aperiam ea adipisci commodi
+        earum modi ex ipsa consequatur accusamus? Ab eius quam illo dolorum corporis consequuntur architecto ullam
+        pariatur.</p>
+    <h1>Personalizando um link</h1>
+    <p>Para aprender HTML5 e CSS3, acesse o <a href="https://gustavoguanabara.github.io" target="_blank">GitHub do Guanabara</a></p>
+    <p>Se quiser conhecer mais sobre os padrões, visite o site do <a href="https://www.w3c.br" target="_blank">Escritório do W3C no Brasil</a></p>
+    <p>Para acompanhar os cursos, acesse o <a href="https://www.youtube.com/cursoemvideo/" target="_blank" class="especial">canal do CursoemVideo</a></p>
+    
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de hover com divs</title>
+    <style>
+        div.surpresa {
+            display: none;
+            height: 198px;
+            width: 198px;
+            background-color: rgb(156, 43, 43);
+            border: 1px solid black;
+        }
+
+        div#normal {
+            height: 200px;
+            width: 200px;
+            background-color: burlywood;
+        }
+        div#normal:active>div{
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus nihil iste magnam fugiat. Asperiores
+        necessitatibus earum iure nobis tenetur tempore dolores quaerat, quis consequuntur unde quasi, non beatae rerum
+        modi?</p>
+    <div id="normal">Caixa normal
+    <div class="surpresa">Caixa surpresa</div>
+    <div class="surpresa">Caixa supresa 2</div>
+    </div>
+</body>
+
+</html>

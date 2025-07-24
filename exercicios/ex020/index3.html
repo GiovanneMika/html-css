@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de estrutura de site</title>
+    <style>
+        nav {
+            background-color: aliceblue;
+            align-content: space-between;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            /* padding: 20px 200px; */
+        }
+
+        li {
+            display: inline-flex;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        section {
+            flex: 3;
+        }
+
+        section article {
+            margin-bottom: 20px;
+        }
+
+        aside {
+            flex: 0.5;
+            background-color: #cccbcb;
+            padding: 20px;
+            box-shadow: 2px 4px 5px rgba(66, 62, 62, 0.541);
+            border-radius: 1px 5px 5px 5px;
+        }
+
+        footer {
+            background-color: aliceblue;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .artigo-conteudo {
+            display: flex;
+            gap: 20px;
+            /* espaçamento entre p e aside */
+            align-items: flex-start;
+            /* alinha pelo topo */
+        }
+
+        .artigo-conteudo p {
+            flex: 3;
+            /* ocupa mais espaço */
+        }
+
+        .artigo-conteudo aside {
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=F_0rS5DDi3M">Video bom</a></li>
+                <li><a href="https://www.youtube.com/watch?v=F_0rS5DDi3M">Video bom</a></li>
+                <li><a href="https://www.youtube.com/watch?v=F_0rS5DDi3M">Video bom</a></li>
+                <li><a href="https://www.youtube.com/watch?v=F_0rS5DDi3M">Video bom</a></li>
+                <li><a href="https://www.youtube.com/watch?v=F_0rS5DDi3M">Video bom</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Título do artigo 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi exercitationem illum corporis cum
+                    nihil perspiciatis sint dicta accusamus ipsa doloribus, recusandae pariatur asperiores. Omnis maxime
+                    enim, modi aliquid incidunt rerum?
+                    Blanditiis unde exercitationem quibusdam adipisci laudantium, ut numquam impedit possimus officiis.
+                    Earum qui quae corporis sit autem atque sunt fuga repellendus? Rem soluta unde aspernatur
+                    laudantium. A ea fuga sint.
+                    Culpa dolore porro accusamus odio sint magnam facilis possimus reprehenderit, quaerat labore itaque,
+                    velit cum modi quod voluptatibus rerum quas et expedita cupiditate. Odio quisquam, illum
+                    necessitatibus quasi nesciunt architecto.
+                    Et iste similique provident corporis, sequi autem itaque ducimus porro. Veritatis quos nobis magni!
+                    Accusamus ad dolorem fugit corporis aut consequatur reiciendis, asperiores eveniet magni hic esse
+                    quasi officiis quis!
+                    Ea facilis, vel, excepturi officiis est neque ullam perspiciatis dignissimos, unde ipsam maxime
+                    temporibus nesciunt eos libero doloribus ipsa sequi ex expedita? Laborum molestiae illum eligendi
+                    tempora, libero voluptate vero.</p>
+            </article>
+            <article class="artigo">
+                <h2>Título do artigo 1</h2>
+                <div class="artigo-conteudo">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos accusantium inventore iure
+                        unde, fugit quod asperiores repellat! Molestiae, quo cum eum, autem aliquid dolorem,
+                        perspiciatis
+                        nihil animi earum quidem fugit?
+                        Eaque quo facere fuga id explicabo, deserunt molestiae obcaecati exercitationem voluptatum optio
+                        doloremque aut et ipsam quae at, culpa odit laudantium cum architecto voluptas in nulla omnis
+                        porro.
+                        Tempora, quidem.
+                        Mollitia ut illo tempore beatae aperiam odio corporis. Recusandae tempora impedit ducimus
+                        obcaecati
+                        sunt. Voluptatibus aperiam et culpa itaque nam optio dolorum harum! Accusamus possimus quasi
+                        magni
+                        debitis pariatur ex.
+                        Totam sequi, rem accusamus alias eum, nisi, pariatur in eius voluptatum culpa labore. Non eaque
+                        quasi corrupti sunt quos doloremque neque explicabo eveniet ratione accusamus, quam, adipisci
+                        officiis quod saepe?</p>
+                    <aside>
+                        <strong>Conteudo periférico do artigo:</strong> Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Quod, fuga
+                        ipsa totam animi amet vitae consectetur aut magnam quae et iusto odio suscipit, modi velit
+                        dolorum?
+                        Numquam voluptatibus soluta deserunt!
+                        Voluptates necessitatibus dolores, consequatur maxime delectus, libero voluptatem exercitationem
+                        nisi similique et animi? Reiciendis delectus autem, atque consectetur minima veritatis
+                        temporibus
+                        dolorem assumenda voluptate expedita dolores rem aliquam error deserunt.
+                        Velit, magni. Veritatis inventore, laborum culpa reprehenderit omnis optio voluptatum, velit
+                        laboriosam voluptatibus hic, rem voluptate neque eveniet praesentium! Minima doloremque libero
+                        ea
+                        culpa necessitatibus sunt mollitia explicabo, ipsum esse?
+                        Unde suscipit praesentium perspiciatis impedit ut laboriosam maxime error dolorem repellendus,
+                        esse
+                        vero ipsum, voluptates architecto nobis hic odit at recusandae quisquam excepturi iste eligendi
+                        quod
+                        aspernatur veritatis. Ratione, delectus?
+                        Delectus debitis ea porro! Recusandae eligendi hic quo. Neque sint recusandae dignissimos. In
+                        accusamus sapiente explicabo, dolorum vel corrupti magni rem voluptates fugit! Voluptas, unde
+                        doloremque. Sit quod accusantium dicta.
+                    </aside>
+                </div>
+            </article>
+        </section>
+        <aside>
+            <strong>Conteudo periférico do site:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+            accusamus itaque?
+            Dolor, odit molestias, voluptates eius blanditiis fugiat laborum quod in alias amet deleniti minima odio
+            explicabo sit possimus? Tenetur.
+            Tenetur, repellendus facere? Quidem eveniet reiciendis ipsa fugiat earum minima quasi atque praesentium
+            placeat pariatur laboriosam odio impedit eius, tenetur explicabo ratione ullam obcaecati molestias
+            consequatur laudantium provident eaque consectetur?
+            Alias ex, exercitationem quos quae fugit quod, iste aperiam ad sit nobis nihil voluptas iusto repudiandae
+            maiores ipsum voluptatibus corrupti, beatae perferendis sint dolor praesentium sed laboriosam molestiae!
+            Quod, sed.
+            Vitae amet, temporibus, perferendis accusamus fugiat aperiam recusandae, quibusdam repudiandae ipsa numquam
+            excepturi eum deserunt a ut iure qui nobis facilis exercitationem repellendus consequatur quas deleniti.
+            Iure, quibusdam cumque. Labore.
+            Vitae velit blanditiis numquam magnam, neque laboriosam atque dolor explicabo corporis fuga ipsam possimus
+            temporibus, debitis nam laborum molestiae alias excepturi autem maiores nesciunt voluptas voluptates,
+            dolorum asperiores nulla. Eligendi.
+        </aside>
+    </main>
+    <footer>
+        conteudo do rodape
+    </footer>
+</body>
+
+</html>
