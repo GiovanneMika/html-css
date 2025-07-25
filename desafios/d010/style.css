@@ -40,10 +40,6 @@ aside ul {  /* jeito do guanabara*/
     list-style-position: inside;
 }
 
-.sublinhado-pontilhado{
-    text-decoration: underline dotted;
-}
-
 @font-face {
     font-family: 'Droid-font';
     src: url('fontes/idroid.otf') format('opentype');
@@ -253,6 +249,7 @@ header a {
     padding: 10px;
     font-weight: bold;
     transition-duration: 0.2s;
+    text-decoration: none;
 }
 
 header a:hover {
