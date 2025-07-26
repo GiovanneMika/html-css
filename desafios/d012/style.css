@@ -47,7 +47,7 @@ main p{
     font-family: 'Sriracha', cursive, sans-serif;
     font-size: 3.4vw;
     padding-left: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 10vh;
     line-height: 2em;
 }
 
