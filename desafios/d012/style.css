@@ -43,6 +43,11 @@ a:hover {
     text-decoration: underline;
 }
 
+a:active{
+    text-decoration: none;
+    color: #3b3a35;
+}
+
 main p{
     font-family: 'Sriracha', cursive, sans-serif;
     font-size: 3.4vw;
@@ -59,6 +64,7 @@ main {
 div#especial1 {
     color: white;
     background-image: url(imagens/background001.jpg);
+    background-color: #2c2b28;
     background-size: cover;
     background-attachment: fixed;
     background-position: center right;
@@ -78,6 +84,7 @@ div#especial1 p {
 div#especial2 {
     color: white;
     background-image: url(imagens/background002.jpg);
+    background-color: #2c2b28;
     background-size: cover;
     background-attachment: fixed;
     background-position: center right;
@@ -92,4 +99,14 @@ div#especial2 p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.550);
     text-shadow: 1px 1px 0px black;
+}
+
+
+footer img{
+    height: 12px;
+    display: inline;
+}
+
+footer a#git:hover {
+    color: #F05033;
 }
