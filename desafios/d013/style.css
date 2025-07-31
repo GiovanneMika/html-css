@@ -93,20 +93,21 @@ div#redes-sociais img:hover {
         box-sizing: border-box;
         display: inline;
     }
+}
+
+@media screen and (max-width: 300px) {
 
     main div#celular {
         position: absolute;
         top: 57%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(0.8);
     }
 
     iframe {
-        width: 266px;
-        height: 470px;
         position: absolute;
         top: 57%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(0.8);
     }
 }
