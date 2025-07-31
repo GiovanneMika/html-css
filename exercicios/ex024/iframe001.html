@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Frame</title>
+
+    <style>
+        iframe{
+            width: 100%;
+            height: 500px;
+            border: 5px solid black;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iframe Externo</h1>
+    <p>Acesse o site <iframe src="https://giovannemika.github.io/line-thunder/pages/info/is3-info.html#" frameborder="0" width="500" height="500" scrolling="auto">[Seu navegador não suporta iframes!]
+    </iframe> e faça muitos cursos!</p>
+
+    <h1>Iframe com links dinamicos e srcdoc (pagina padrão)</h1>
+    <ul>
+        <li><a href="https://wiki.warthunder.com/randomVehicle?tree=2" target="iframe-wt">Clique aqui para ver um tanque aleatório</a></li>
+        <li><a href="https://wiki.warthunder.com/randomVehicle?tree=1" target="iframe-wt">Clique aqui para ver um helicóptero aleatório</a></li>
+        <li><a href="https://wiki.warthunder.com/randomVehicle?tree=0" target="iframe-wt">Clique aqui para ver um avião aleatório</a></li>
+        <li><a href="https://wiki.warthunder.com/randomVehicle?tree=4" target="iframe-wt">Clique aqui para ver um navio aleatório</a></li>
+        <li><a href="https://wiki.warthunder.com/randomVehicle?tree=5" target="iframe-wt">Clique aqui para ver um veículo aleatório</a></li>
+    </ul>
+    <iframe srcdoc="<div style='background-color: gray; width: 100%; height: 100%;'><h1 style='background-color: gray;'>Escolha uma das opções acima!</h1> <p>Conteúdo do iframe</p></div>" name="iframe-wt" frameborder="0" width="500" height="500" scrolling="auto">[Seu navegador não suporta iframes!]
+    </iframe>
+
+    <h1>Iframe com conteúdo local</h1>
+    <iframe src="../../desafios/d010/index.html" frameborder="0" width="600" height="400"></iframe>
+
+    <h1>Iframe com srcdoc</h1>
+    <iframe srcdoc="<div style='background-color: red; width: 100%; height: 100%;'><h1 style='background-color: red;'>Teste de Iframe</h1> <p>Conteúdo do iframe</p></div>" frameborder="0"></iframe>
+
+    <h1>Exemplo de Iframe seguro</h1>
+    <iframe src="pag001.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+
+    <h1>Exemplo de Iframe que é possivel confiar</h1>
+    <iframe src="pag001.html" frameborder="0" sandbox="allow-same-origin allow-scripts allow-forms" referrerpolicy="no-referrer"></iframe>
+
+    <h1>Exemplo de iframe com JavaScript</h1>
+    <iframe src="pag002.html" frameborder="0" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe>
+</body>
+</html>
