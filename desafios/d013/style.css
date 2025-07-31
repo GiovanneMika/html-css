@@ -7,7 +7,7 @@ body {
     background-image: url(imagens/fundo-madeira.jpg);
     background-size: cover;
     position: relative;
-    height: 100vh;
+    height: 99vh;
 }
 
 
@@ -40,14 +40,15 @@ main a {
     color: transparent;
 }
 
-
-div#redes-sociais img{
+div#redes-sociais img {
     border-radius: 50%;
     height: 50px;
     width: 50px;
     margin: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
+    display: block;
+    justify-self: right;
 }
 
 div#redes-sociais img:hover {
@@ -58,5 +59,22 @@ div#redes-sociais img:hover {
 }
 
 div#redes-sociais {
-    text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+
+    div#redes-sociais {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    div#redes-sociais img {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    display: inline;
+}
 }
