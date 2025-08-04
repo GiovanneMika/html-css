@@ -165,6 +165,7 @@ main {
         background-image: url(imagens/back-tv.jpg);
         background-position: center center;
         background-size: cover;
+        font-family: 'Courier New', Courier, monospace;
     }
     
 }
