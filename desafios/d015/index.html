@@ -22,17 +22,15 @@
                 <form action="login.php" method="post">
                     <div class="campo">
                         <span id="" class="material-symbols-outlined">
-                            mail
+                            <label for="email">mail</label>
                         </span>
-                        <input type="email" name="email" id="email" placeholder="Seu email">
-                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Seu email" autocomplete="email" required>
                     </div>
                     <div class="campo">
                         <span id="" class="material-symbols-outlined">
-                            password
+                            <label for="senha">password</label>
                         </span>
-                        <input type="password" name="senha" id="senha" placeholder="Seu senha" maxlength="20">
-                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Seu senha" minlength="8" maxlength="20" autocomplete="current-password" required>
                     </div>
                     <input type="submit" value="Entrar">
                 </form>

@@ -55,9 +55,6 @@ div#formulario h1 {
     padding-bottom: 10px;
 }
 
-div#formulario>form>div>label {
-    display: none;
-}
 
 div.campo {
     background-color: var(--cor-primaria);
