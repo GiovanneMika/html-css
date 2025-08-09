@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+header h1 {
+    flex: 0 0 150px;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+menu {
+    flex-basis: 500px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+header a {
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+
+header a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+
+body {
+    background-color: lightgray;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
+article p {
+    text-indent: 15px;
+    margin-bottom: 10px;
+}
+
+
+span#burguer {
+    display: none;
+}
+
+@media (max-width: 550px) {
+
+    span#burguer {
+        background-color: rgb(0, 0, 0);
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    span#burguer:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        transition: .3s;
+    }
+
+    header {
+        flex-flow: column wrap;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header h1 {
+        flex-basis: auto;
+        justify-self: center;
+    }
+
+    menu {
+        flex-basis: 250px;
+        display: none;
+    }
+
+    header ul {
+        flex-flow: column wrap;
+        justify-content: space-around;
+        flex: 1;
+        text-align: center;
+        width: 90vw;
+    }
+}

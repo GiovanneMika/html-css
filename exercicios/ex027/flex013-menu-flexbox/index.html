@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="itens">
+            <ul>
+                <a href="">
+                    <li>Opção 1</li>
+                </a>
+                <a href="">
+                    <li>Opção 2</li>
+                </a>
+                <a href="">
+                    <li>Opção 3</li>
+                </a>
+                <a href="">
+                    <li>Opção 4</li>
+                </a>
+                <a href="">
+                    <li>Opção 5</li>
+                </a>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Teste de Flexbox</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat excepturi velit fuga esse cupiditate
+                illum magni quam recusandae facilis perferendis eaque iste blanditiis, molestias, neque similique eius,
+                quas fugit expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit praesentium culpa ad
+                eveniet numquam nisi delectus vitae, facilis similique est esse laboriosam sequi dicta commodi quibusdam
+                laborum? Nihil, labore ipsam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo, nobis quae voluptates dolorum
+                recusandae quod eveniet exercitationem impedit sunt corrupti illum ipsa id at necessitatibus! Enim
+                aspernatur similique maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima numquam
+                molestiae, placeat minus vero nam earum, amet expedita magnam consequuntur natus? Earum quaerat modi
+                expedita quidem ex vitae, reiciendis ipsam!</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'flex') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'flex';
+            }
+            // itens.style.display = itens.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth > 550) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
